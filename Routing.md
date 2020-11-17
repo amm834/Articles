@@ -1,4 +1,9 @@
-# Model View Controller ( Practical Approach)
+# Model View Controller 
+- ( Practical Approach)
+
+## Prerequisites
+- Basic Concept Of MVC
+https://www.facebook.com/483794355524551/posts/819344871969496/
 
 ## Routing Setup
 
