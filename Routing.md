@@ -272,4 +272,81 @@ URL ပြန်ခေါ်ကြည့်ပါ။ class name method မရှ
 ```
 Nov 27 Tue
 [COVID-LAZY]
+
+```
+```
+Complete Code
+```
+`.htaccess`
+
+```
+<IfModule mod_rewrite.c>
+RewriteEngine On
+OPTIONS -Multiviews
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
+```
+
+`index.php`
+
+```
+<?php
+
+$class_name = "Home";
+$method_name = "index";
+$params = [];
+
+$url = isset($_GET['url']) ? rtrim($_GET['url'],'/') : "";
+$url = explode('/',$url);
+echo '<pre>'.print_r($url,true);
+if(!empty($url[0])){
+if(file_exists(ucfirst($url[0])).".php"){
+  $class_name = ucfirst($url[0]);
+  unset($url[0]);
+}
+}
+require_once $class_name.".php";
+new $class_name;
+
+if(!empty($url[1])){
+if(method_exists($class_name,strtolower($url[1]))){
+  $method_name = strtolower($url[1]);
+  unset($url[1]);
+}
+}
+
+$params = array_values($url) ?? [];
+call_user_func_array([$class_name,$method_name],$params);
+
+
+echo '<pre>'.print_r($params,true);
+```
+
+`Home.php`
+
+```
+<?php
+/**
+ * 
+ */
+class Home
+{
+  
+  /**
+   * 
+   */
+  public function __construct()
+  {
+   echo "I am".__CLASS__;
+  }
+  public function show(){
+    echo "<br>I am show method of ".__CLASS__;
+  }
+  public function index(){
+    echo "<br>I am index method of ".__CLASS__;
+  }
+  
+}
 ```
