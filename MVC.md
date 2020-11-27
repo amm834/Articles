@@ -13,15 +13,23 @@ https://github.com/amm834/Articles/blob/main/Routing.md
 
 /
 
-|-- app/
-controllers/
-core/
--> Core.php
-models/
-views/
-
-|--public/
-index.php
+.
+├── app
+│   ├── bootstart.php
+│   ├── controllers
+│   │   ├── Home.php
+│   │   └── Post.php
+│   ├── core
+│   │   ├── BaseController.php
+│   │   ├── Core.php
+│   │   └── DB.php
+│   ├── models
+│   │   └── PostModel.php
+│   └── views
+│       ├── Home.php
+│       └── Post.php
+└── public
+    └── index.php
 
 ```
 
