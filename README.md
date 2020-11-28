@@ -1,5 +1,5 @@
 # Articles
-Green live articles ❤️
+Green live articles 
 
 ## Prerequisites
 
