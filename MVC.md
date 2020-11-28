@@ -35,7 +35,7 @@ https://github.com/amm834/Articles/blob/main/Routing.md
 
 `/app/core/core.php` ဖိုင်ကိုအောက်ပါအတိုင်းပြင်ပါမယ်။
 
-```
+```php
 <?php
 
 /**
@@ -95,7 +95,7 @@ Base controller မဆောက်ခင် Child Controller ကိုအရင�
 
 
 app/controllers/Home.php
-```
+```php
 <?php
 
 /**
@@ -122,7 +122,7 @@ Autoloading ကို className နဲ့Autoloadမှာမို့လို�
 
 /app/core/BaseController.php
 
-```
+```php
 <?php
 /**
 * @BaseController extends this from all child controllers
@@ -154,7 +154,7 @@ real path က App root အတွက် path ယူပြီးတော့
 Require တဲ့အခါ အလွယ်ယူသုံးလို့ရဖို့ဖြစ်ပါတယ်။
 ထို့နောက် app/views/ ထဲတွင် Home.php ဆိုတဲ့ Template တစ်ခြတည်တောက်ပါ။
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -172,7 +172,7 @@ Require တဲ့အခါ အလွယ်ယူသုံးလို့ရဖ�
 ထို့နော`က် app/controllers/`
 Home Controller တွင်အောက်ပါအတိုင်း Template တွေကို Show ပေးရပါမယ်။
 
-```
+```php
 <?php
 
 /**
@@ -199,7 +199,7 @@ $data ကို view/Home ကနေပြပေးရမှာပါ။
 
 views/Home.phpမှာအောက်ပါအတိုင်းပြင်င်ေပါမယ်။
 
-```
+```php
 <!DOCTYPE html>
 <html lang="en">
 <head>
