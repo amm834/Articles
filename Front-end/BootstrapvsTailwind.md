@@ -28,7 +28,7 @@ Border, background တွေကို skin အဖြစ်ခွဲခြား�
 
 ဉပမာ
 
-```
+```css
 #button {
 width: 200px;
 height: 50px;
@@ -60,7 +60,7 @@ box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;
 ပြီးတော့ id နဲ့ပဲ select ထားတဲ့အတွက် နောက် တစ်ခါထပ်ပြီး override လုပ်ခွင့်မရှိဘူး
 ဒီ့အတွက် Principle 1 သုံးပြီးတော့ Skin နဲ့wigetတွေကိုခွဲထုတ်လိုက်ပါတယ်။
 
-```
+```css
 .button {
 width: 200px;
 height: 50px;
@@ -102,7 +102,7 @@ OOCSS ကတော့ class ပဲသုံးရမယ်လို့မပြ�
 
 Container block တွေနဲ့. Content တွေကိုသပ်သပ်ခွဲထားကမှာဖြစ်တယ်။
 
-```
+```css
 #footer h3 {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 1.5em;
@@ -116,7 +116,7 @@ text-shadow: rgba(0, 0, 0, .3) 2px 2px 4px;
 Descending လုပ်ထားတဲ့အတွက် individual tag တွေပဲသုံးလို့ရမှာဖြစ်တဲ့အတွက် reusable မဖုသ်ပါဘူး။
 ဒီ့အတွက်အောက်ပါအတိုင်းအသုံးပြရပါတယ်။
 
-```
+```css
 .w-100{
 width:100%;
 position:relative;
@@ -133,7 +133,7 @@ font-weight:300;
 ခုလိုပြန်ကြေညာလိုက်ရင် h3 class ကိုဘယ်နေရာမှာသုံးသုံးအဆင်ပြေမှာဖြစ်သလို w-100 class ကလည်းနေရာတစ်ကာမှခေါ်သုံးလို့ရမှာဖြစ်တယ်။
 
 Bootstrap example:
-```
+```html
 <footer class="w-100">
 <h1 class="display-1">Hello From OCSS</h1>
 </footer>
@@ -152,7 +152,7 @@ https://github.com/stubbornella/oocss/wiki
 OOCSS အရ Bootstrap ကိုဖွဲ့စည်းတည်တောက်ထားတာဖြစ်တယ်။
 ဒီ့အတွက်
 
-```
+```html
 <button class="btn btn-primary">Btn</button>
 ```
 
@@ -170,7 +170,7 @@ https://tailwindcss.com/docs/utility-first
 သို့သော် utility class တွေဖြစ်တဲ့အတွက် သူတို့ရဲ့class ကို ထပ်ခါထပ်ခါ repeat လုပ်သုံးနေရမှာပါပဲ။
 
 example:
-```
+```html
 <button class="bg-green-400 p-1">Tailwind Button</button>
 ```
 Background class နဲ့ padding class ကိုနောက် button ရေးရင်လည်းထပ်သုံးရမှာပါပဲ။
@@ -240,7 +240,9 @@ Hover effect ပါပါအောင် တော်တော်လေးရေ
 
 အထက်ပါ Code ကို Build ပေးတဲ့အခါ
 
-```<button class="btn">Tailwind</button>```
+```css
+<button class="btn">Tailwind</button>
+```
 
 လို့ခေါ်သုံးလို့ရမယ်။
 ဒါလေးတော့ကောင်းတာပေါ့။
